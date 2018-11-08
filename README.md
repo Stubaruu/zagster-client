@@ -1,7 +1,19 @@
 zagster-client
 
-steps:
-1. Load screen
-2. Grab the value of the count attribute from url.rides/count/
-3. Get response
-4. Print response in <h2> 
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Zagster Bikes in Bend</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<h1>Zagster Bike Share in Bend</h1>
+<h2 id="rideCount">TODO</h2>
+<p>Total Rides</p>
+</body>
+</html>
