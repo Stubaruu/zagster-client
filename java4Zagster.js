@@ -4,7 +4,7 @@ $(updateView)
 
 function updateView() {
     $.getJSON(BASE_URL + "/rides/count", UpdateRideCount) //Prints most current number of rides.
-    $.getJSON(BASE_URL + "rides/count/per_month", UpdateMonthlyCount)
+    $.getJSON(BASE_URL + "/rides/count/per_month", UpdateMonthlyCount)
 }
 
 function UpdateRideCount(data) {
