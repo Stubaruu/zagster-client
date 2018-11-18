@@ -7,6 +7,6 @@ function updateView() {
 }
 
 function UpdateRideCount(data) {
-    numberOfRides = data.count
-    $("h3#rideCount").html(numberOfRides)
+    numberofRides = data.count
+    $("h2#rideCount").html(numberofRides)
 }
