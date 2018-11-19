@@ -3,13 +3,13 @@ body {
   }
 h2 { transition-property: 3s;
     font-size: 200%;
-    color:green
+    color:black
 }
 
 .dot {
     height: 20px;
     width: 20px;
-    background-color: black;
+    background-color: rgb(23, 94, 90);
     border-radius: 50%;
     display: inline-block;
   }
@@ -17,7 +17,7 @@ h2 { transition-property: 3s;
 .graph {
     height: 20px;
     width: 20px;
-    background-color: blue;
+    background-color: rgb(3, 59, 31);
     border-radius: 50%;
     display: inline-block;
 }

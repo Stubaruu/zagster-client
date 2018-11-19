@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>Zagster Data Visualization</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+<link rel="stylesheet" href="Main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS4Zagster.css">
+<script src="java4Zagster.js"></script>
+
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding: 10px 16px">
+  <h1>Zagster Data Visualization</h1>
+
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="https://stubaruu.github.io/zagster-client/" class="w3-bar-item w3-button">Home</a>
+      <a href="" class="w3-bar-item w3-button">Locations</a>
+    </div> 
+</header>
+
+<!-- Photo Grid -->
+<!-- DATA VISUALIZATION -->
+<div class="w3-panel w3-center" style="padding:10px 2px">
+<p>NUMBER OF RIDES </p>
+    <h2 id="rideCount">RideCount</h2>
+    <h3>
+        <span class="dot" style=""></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="graph"></span>
+        <span class="graph"></span>
+        <span class="graph"></span>
+        <span class="graph"></span>
+        <span class="graph"></span>
+    </h3>
+    </div>
+<div class="w3-panel w3-center" style="padding:10px 2px"></div>
+  <img src="" style="width:100%" rotate="90L">
+  <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:805px;width:700px;}.gmap_canvas {overflow:hidden;background:none!important;height:805px;width:700px;}</style></div>
+  
+<!-- End Page Content -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <i class="fa fa-github w3-hover-opacity"></i>
+  <p>Powered by<a href="#" target="_blank" class="w3-hover-text-blue"> Elir</a></p>
+</footer>
+
+</body>
+</html>
