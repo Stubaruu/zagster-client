@@ -8,6 +8,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 <link rel="stylesheet" href="Main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,22 +36,55 @@ h1 {letter-spacing: 6px}
 <div class="w3-panel w3-center" style="padding:10px 2px">
 <p>NUMBER OF RIDES </p>
     <h2 id="rideCount">RideCount</h2>
-    <h3>
-        <span class="dot" style=""></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="graph"></span>
-        <span class="graph"></span>
-        <span class="graph"></span>
-        <span class="graph"></span>
-        <span class="graph"></span>
-    </h3>
     </div>
-<div class="w3-panel w3-center" style="padding:10px 2px"></div>
-  <img src="" style="width:100%" rotate="90L">
-  <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:805px;width:700px;}.gmap_canvas {overflow:hidden;background:none!important;height:805px;width:700px;}</style></div>
+
+    <canvas id="myChart" width="300" height="300"></canvas>
+    <script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Year", "Station", "Destination", "User", "Month", "Week", "Day", "Time", ""],
+            datasets: [{
+                label: 'Most Popular', 
+                data: [19277, 1412, 1255, 2364, 3061, 13273, 2145, 532, 243], //PLUG IN REAL DATA NEXT
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(230, 179, 80, 10)',
+                    'rgba(255, 149, 34, 20)',
+                    'rgba(255, 190, 54, 06)'
+                ],
+                borderWidth: 3
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+
   
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
   <i class="fa fa-github w3-hover-opacity"></i>

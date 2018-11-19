@@ -17,3 +17,4 @@ function UpdateMonthlyCount(data) {
     console.log(data)
 }
 //DATA VISUALIZATION 
+
