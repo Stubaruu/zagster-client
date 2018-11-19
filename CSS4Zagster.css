@@ -5,3 +5,20 @@ h2 { transition-property: 3s;
     font-size: 200%;
     color:green
 }
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.graph {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+.data (.dot)
