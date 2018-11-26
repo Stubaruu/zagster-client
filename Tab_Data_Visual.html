@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-        function updateView() {
-    data.getElementById("Year", "Station", "Destination", "User", "Month", "Week", "Day", "Time").innterHTML = "";
-}
-        </script>
+ <script>
+     function updateView() {
+     data.getElementById("Year", "Station", "Destination", "User", "Month", "Week", "Day", "Time").innterHTML = "";
+    }
+</script>
 </head>
 <title>Zagster Data Visualization</title>
 <meta charset="UTF-8">
@@ -36,7 +36,7 @@ h1 {letter-spacing: 6px}
   <div class="w3-padding-32">
     <div class="w3-bar w3-border">
       <a href="https://stubaruu.github.io/zagster-client/" class="w3-bar-item w3-button">Home</a>
-      <a href="#" class="w3-bar-item w3-button">About</a>
+      <a href="./Tab_About.html" class="w3-bar-item w3-button">About</a>
     </div> 
 </header>
 
@@ -45,16 +45,16 @@ h1 {letter-spacing: 6px}
     <h2 id="RideCount">RideCount</h2>
     </div>
 
-    <canvas id="myChart" width="200px" height="200px"></canvas>
-    <script>
+<canvas id="myChart" width="200px" height="200px"></canvas>
+<script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: [id= "Year", "Station", "Destination", "User", "Month", "Week", "Day", "Time"],
+            labels: ["Year", "Station", "Destination", "User", "Month", "Week", "Day", "Hour"],
             datasets: [{
                 label: 'Most Popular', 
-                data: RideNumbers,  //PLUG IN REAL DATA NEXT
+                data: [100, 200,200, 200, 300, 400, 600, 500],  //PLUG IN REAL DATA NEXT
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
