@@ -1,16 +1,14 @@
+<!--!\\Leave a Note//!-->
+
 <!DOCTYPE html>
 <html>
 <head>
- <script>
-     function updateView() {
-     data.getElementById("Year", "Station", "Destination", "User", "Month", "Week", "Day", "Time").innterHTML = "";
-    }
-</script>
 </head>
 <title>Zagster Data Visualization</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script
+                                            <!-- !\\ Which of these href tags are redundant if any? Remove any that do not apply //! -->
+<script                                                             
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
@@ -45,52 +43,12 @@ h1 {letter-spacing: 6px}
     <h2 id="RideCount">RideCount</h2>
     </div>
 
-<canvas id="myChart" width="200px" height="200px"></canvas>
-<script>
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["Year", "Station", "Destination", "User", "Month", "Week", "Day", "Hour"],
-            datasets: [{
-                label: 'Most Popular', 
-                data: [100, 200,200, 200, 300, 400, 600, 500],  //PLUG IN REAL DATA NEXT
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(230, 179, 80, 10)',
-                    'rgba(255, 149, 34, 20)',
-                    'rgba(255, 190, 54, 06)'
-                ],
-                borderWidth: 3
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
-    </script>
+<div><canvas id="myUnique" width="200px" height="200px"></canvas></div>
+<div><p>How do I extend this out so all the numbers fit?</p><canvas id="myWeeks" width="200px" height="200px"></canvas></div>
+<div><canvas id="myGraph" width="200px" height="200px"></canvas></div>
 
+<footer>
+        <p>Powered by<a href="https://kingkiller.fandom.com/wiki/E%27lir" target="_blank" class="w3-hover-text-blue"> E'lir</a></p>
+    </footer>
 </body>
 </html>
