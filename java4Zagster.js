@@ -12,10 +12,12 @@ $.when($.getJSON(BASE_URL + "/rides/count/per_hour/", PrepareHours)
 ).then(
     displayHours
 );
+
 $.when($.getJSON(BASE_URL + "/rides/count/per_year/", PrepareYears)
 ).then(
     displayYears
 );
+
 //Functions Correspond Linearly from function updateView()
 function UpdateRideCount(data) {
     numberofRides = data.count
@@ -34,17 +36,18 @@ function PrepareHours(data) {
    }
    console.log(myHours);
 }
+
 function PrepareYears(data) {
     console.log(data);
  
-    for (var i = 0; i < 24; ++i) {
+    for (var i = '2016'; i < '2019'; ++i) {
         if( data[i] === undefined) {
             myYears.push(0);
         } else {
         myYears.push(data[i]);
         }
     }
-    console.log(myHours);
+    console.log(myYears);
  }
 
 
@@ -130,59 +133,19 @@ function PrepareYears(data) {
         var myWeeks = new Chart(ctx, {                       
                 type: 'bar',                                 
                 data: {                                     
-                    labels: [],
+                    labels: ['2016', '2017', '2018'],
                     datasets: [{
                     label: ['Years'], 
                     data: myYears,                      
                     backgroundColor: [                  
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)', 
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 206, 86, 0.5)',
                         ],
                     borderColor: [                      
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
-                            'rgba(255, 159, 64, 0.2)', 
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(0, 128, 128, 0.5)',
+                            'rgba(0,128, 128, 0.5)',
+                            'rgba(0, 128, 128, 0.5)',
                         ],
                     borderWidth: 3
                     }]
@@ -198,3 +161,4 @@ function PrepareYears(data) {
                 }
             });
         }
+
