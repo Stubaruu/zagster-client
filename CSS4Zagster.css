@@ -1,3 +1,4 @@
+                        /*Below = css for Index.html*/  
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
   }
@@ -5,23 +6,7 @@ h2 { transition-property: 3s;
     font-size: 200%;
     color:black
 }
- 
-.dot {
-    height: 0px;
-    width: 0px;
-    background-color: rgb(23, 94, 90);
-    border-radius: 50%;
-    display: inline-block;
-  }
- 
-.graph {
-    height: 0px;
-    width: 0px;
-    background-color: rgb(3, 59, 31);
-    border-radius: 50%;
-    display: inline-block;
-}
- 
+                        /*Below = css for Tab_Data_Visual.html*/  
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -42,4 +27,21 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+                        /* Below = css for graphs in Tab_Data_Visual */          
+.myUnique{
+    float: center; 
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+}
+
+                        /* How do I get the Graphs to line up Horizontaly? */ 
+.graph {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(3, 59, 31);
+    border-radius: 50%;
+    display: inline-block;
 }
