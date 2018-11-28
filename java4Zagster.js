@@ -24,6 +24,7 @@ function UpdateRideCount(data) {
     $("h2#RideCount").html(numberofRides)
 }
 
+//function for Hours
 function PrepareHours(data) {
    console.log(data);
 
@@ -37,6 +38,7 @@ function PrepareHours(data) {
    console.log(myHours);
 }
 
+//function for Years
 function PrepareYears(data) {
     console.log(data);
  
@@ -49,7 +51,6 @@ function PrepareYears(data) {
     }
     console.log(myYears);
  }
-
 
                                                            ////CHARTS AND GRAPHS FOR VISUALIZATION////
 
@@ -161,4 +162,3 @@ function PrepareYears(data) {
                 }
             });
         }
-

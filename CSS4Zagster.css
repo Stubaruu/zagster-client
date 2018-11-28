@@ -6,6 +6,10 @@ h2 { transition-property: 3s;
     font-size: 200%;
     color:black
 }
+h3 {
+    text-align: center;
+    padding: 0px;
+}
                         /*Below = css for Tab_Data_Visual.html*/  
 div.gallery {
     margin: 5px;
@@ -45,3 +49,4 @@ div.desc {
     border-radius: 50%;
     display: inline-block;
 }
+
